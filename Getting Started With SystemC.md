@@ -54,7 +54,7 @@ int sc_main(int argc, char *argv[])
 #### Compilation
 ```
 $ export SYSTEMC_HOME=<absolute_path_to_>/systemc_installed
-$ g++ -I$SYSTEMC_HOME/include -L. -L$SYSTEMC_HOME/lib-linux64 -Wl,-rpath=$SYSTEMC_HOME/lib-linux64 -o sim hello.cpp -lsystemc -lm
+$ g++ -I$SYSTEMC_HOME/include -L$SYSTEMC_HOME/lib-linux64 -Wl,-rpath=$SYSTEMC_HOME/lib-linux64 -o sim hello.cpp -lsystemc -lm
 $ ./sim
         SystemC 2.3.1-Accellera --- Jul  3 2017 09:46:22
         Copyright (c) 1996-2014 by all Contributors,
