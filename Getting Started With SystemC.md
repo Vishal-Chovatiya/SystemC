@@ -11,7 +11,7 @@ $ sudo apt-get install linux-headers-$(uname -r)
 2. Untar the package
 ```
 $ tar -xzvf systemc-2.3.1a.tar.gz
-$ cd systemc-2.3.1a
+$ ls systemc-2.3.1a
 ```
 3. Make a directory `systemc_installed` for installation in your `/usr/local/` path. As i have no root permission i am creating this directory in local folder. Also create temporary directory to process installation files.
 ```
@@ -23,6 +23,7 @@ $ mkdir objdir
 $ cd objdir/
 $ ../systemc-2.3.1a/configure --prefix=<absolute_path_to_>/systemc_installed
 $ make && make install
+$ ls systemc_installed
 ```
 Note: Use `sudo make && make install`, if your installation directory is in `/` (root) directory.
 Thats all! the installation is done.
