@@ -62,3 +62,20 @@ $ ./sim
 Hello World
 ```
 
+### Documentations
+- I would prefer doxygen docs as there are lot of benefits of using it, you can find that on internet by yourself & if you want rapid start you can follow [this](https://github.com/VisheshPatel/DeveloperUseful/blob/master/doxygen.md).
+- Please note that graphviz if dependency for doxygen & doxygen should be preinstalled.
+- After the installation of SystemC, go to docs/sysc/doxygen in the installed folder(i.e. 'systemc_installed' in out case). There you will find doxygen project file. You have to generate browsable .html file for documentation.
+```
+$ cd $SYSTEMC_HOME/docs/sysc/doxygen
+$ doxygen Doxyfile
+....
+Patching output file 330/332
+Patching output file 331/332
+Patching output file 332/332
+lookup cache used 15080/65536 hits=283764 misses=16094
+finished...
+$ firefox html/index.html
+```
+- That's it. You promoted with SystemC documentation message in browser.
+
